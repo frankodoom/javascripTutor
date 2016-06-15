@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic Data</title>
+    <script src="Scripts/jquery-2.2.1.js"></script>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+      
+    <script src="Scripts/bootpag.min.js"></script>
+    <script src="Scripts/parse.js"></script>
+    <script>
+        loadAlbum();
+    </script>
+	<meta charset="utf-8" />
+    <style>
+
+.card {
+  background: #fff;
+  border-radius: 2px;
+  display: block;
+  float: left;
+  height: 70px;
+  /*margin: 1rem;*/
+  position: relative;
+  width: 100%;
+  margin:auto;
+ margin-bottom:10px;
+}
+.titlediv{
+    top:50%; 
+    margin-left:20px;
+    position: absolute;
+
+}
+
+.titletext{
+    font-weight:bold;
+    margin-right:5px;
+    color:green;
+}
+
+.card-1 {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.2s ease-in-out;
+}
+
+.card-1:hover {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.card-2 {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.card-3 {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.card-4 {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.card-5 {
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 
+       15px 12px rgba(0,0,0,0.22);
+}
+
+    </style>
+
+</head>
+<body>
+     
+    <h1 style="margin-top:70px; text-align:center;">Dynamic Album List Project</h1>
+    <h3 style=" text-align:center;">Using Api http://jsonplaceholder.typicode.com/albums </h3>
+    <p style="text-align:center;margin-bottom:70px;">By Frank Odoom follow me on twitter @mr.odoom </p>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-lg-offset-3">
+                <div class="panel panel-default" style="height:100%">
+                    <div class="panel-heading">Album List</div>
+                    <div id="cardPanel" class="panel-body">
+
+                        <img id="loadGif" src="Images/loading.gif" height="50" width="50" style="margin:auto" />
+
+                    </div>
+                    <div id="panelFooter"class="panel-footer">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <script>
+        $('#panelFooter').bootpag({
+            total: 5,
+            maxVisible:5
+        }).on("page", function (event, /* page number here */ num) {
+         
+           // $("#content").html("Insert content"); // some ajax content loading...
+        });
+    </script>
+    <script src="Scripts/bootstrap.min.js"></script>
+</body>
+</html>

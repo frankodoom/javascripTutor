@@ -1,0 +1,41 @@
+﻿ <!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="Scripts/jquery-2.2.1.js"></script>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <h1>This is JavaScript Objects Tutorial</h1>
+     <p>JavaScript Object Literal. A JavaScript object literal is a comma-separated list of name-value pairs wrapped in curly braces. Object literals encapsulate data, enclosing it in a tidy package. This minimizes the use of global variables which can cause problems when combining code.</p>
+    <p id="vehicleInfo"></p>
+    <script>
+
+        //object literal
+        var car = {
+            make: "Toyota",
+            model: "Corolla",
+            color: "Red",
+            registration: "GR6679Y",
+            carInfo: function () {
+                $('#vehicleInfo').html('<i style="color:blue;"> your vehicle information is : make: '   + this.make +  '  model:  '  + this.model  +  '  color  '  + this.color +  '  registration  ' +  this.registration + '</i>');
+            }
+
+
+        };
+
+        //constructors are used for inheritance. Capetalise Constructors
+        function HumanBeing() {
+            this.walk = "walking",
+            this.talk = "talking"
+        };
+
+        var man = new HumanBeing();
+        man.walk = "a man can walk";
+        man.talk = "a man can talk";
+        alert(man.walk);
+
+
+    </script>
+</body>
+</html>

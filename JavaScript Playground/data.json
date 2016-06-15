@@ -1,0 +1,29 @@
+﻿//Json Array Object of My Family
+
+[
+  {
+    "FirstName": "Frank ",
+    "LastName": "Odoom",
+    "Age": 20
+  },
+
+  {
+    "FirstName": "Sally ",
+    "LastName": "Odoom",
+    "Age": 4
+  },
+
+
+  {
+    "FirstName": "Naana ",
+    "LastName": "Odoom",
+    "Age": 28
+  },
+
+  {
+    "FirstName": "Coby ",
+    "LastName": "Odoom",
+    "Age": 2
+  }
+
+]

@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Loading Json Using $.ajax()</title>
+    <script src="Scripts/jquery-2.2.1.min.js"></script>
+	<meta charset="utf-8" />
+        <script>
+
+            $(document).ready(function () {
+                $.ajax({
+                    url: 'http://jsonplaceholder.typicode.com/albums',
+                    success: function (data) {
+                        if (data.length > 0) {
+                            $('#para').html('<i style="color:green;">Ajax Loaded Successfully..</i>');
+                            //alert(data.length);
+                            $.each(data, function (key, value) {
+
+
+
+                            }
+                            
+                            )
+                        }
+                    },
+                    error: function () {
+                        $('#para').text('Something Went Wrong..')
+                    },
+                    complete: function(){
+                        $('#para').text('ajax load complete..')
+                       
+                }
+
+                });
+            })
+        </script>
+         
+</head>
+<body><h1>Ajax Calls</h1>
+    <p id="para"></p>
+</body>
+</html>

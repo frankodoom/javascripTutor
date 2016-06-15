@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="Scripts/jquery-2.2.1.min.js"></script>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/bootstrap-theme.css" rel="stylesheet" />
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/jquery-ui-1.11.4.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
+    <script src="Scripts/notify.min.js"></script>
+   
+	<meta charset="utf-8" />
+    <script>
+      (function () {
+          alert("I am a self invoking function");
+      })
+    </script>
+    
+</head>
+<body>
+    <p id="para"></p>
+
+    <!--<div id="box" style="height:200px; width:200px; background-color:red;">
+
+
+    </div>
+    <button id="btnShake" onclick="shakeMe">Shake</button>-->
+
+
+    <div style="margin:3em;">
+        <button type="button" class="btn btn-primary " id="load" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Processing Order">Submit Order</button>
+        <br>
+        <br>
+        <!--<button type="button" class="btn btn-primary btn-lg" id="load" data-loading-text="<i class='fa fa-spinner fa-spin '></i> @Localization.Uploading">Submit Order</button>-->
+    </div>
+  
+
+    <script src="Scripts/network.js"></script>
+   <script>
+       window.onerror = function (msg, url, line) {
+           alert("Sorry Something went wrong");
+           alert("Error on this page with link" +" "+ url);
+           alert("Error on line"+" "+ line);
+       }
+   </script>
+</body>
+</html>

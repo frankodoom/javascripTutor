@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="Scripts/jquery-2.2.1.js"></script>
+</head>
+<body>
+    <script>
+        //Array 1
+       // var cars = ('Toyota', 'Hyundai', 'Lexus', 'Jeep');
+       // document.write(cars.length);
+
+        var students = [];
+        students[0] = "Frank Odoom";
+        students[1] = "Joshua Leigh";
+        students[2] = "Sally Odoom";
+        students[3] = "Coby Odoom";
+
+        // push method on an array
+        students.push('Lisa Odoom');
+        students.push('Frederick Odoom');
+
+        // Array Pop
+        students.pop();
+        //iterate over array
+       function printArray() {
+        for (i = 0; i < students.length; i++) {
+            document.write(students[i]+'<br/>');
+        }
+        };
+        printArray();
+
+        //(function () {
+        //    for (i = 0; i < students.length; i++) {
+        //        document.write(students[i] + '<br/>');
+        //    }
+        //});
+       // document.write(students[0]);
+    </script>
+    
+
+</body>
+</html>
