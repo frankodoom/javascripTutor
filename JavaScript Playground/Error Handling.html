@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script>
+
+        // Error Handling
+        //try{
+        //    document.write(hello())
+        //}
+        //catch (e) {
+        //    document.write(e.message+"<br/>")
+        //    document.write(e.description + "<br/>");
+        //    document.write(e.stack + "<br/>");
+        //}
+        //finally{
+        //    document.write("I will always be called")
+        //}
+
+
+
+        //Custom Exception Message
+
+        var input = prompt("Enter a Number From 1-10");
+        try{
+            if (input>10 ||input<1){
+                throw{
+                    error:" invalid number",
+                    message:"You entered a number less than 1 or greater than 10"
+                }
+            }
+        }
+            catch(e){
+                document.write(e.message + "<br/>");
+            }
+        finally {
+            document.write("i will be called no matter what");
+        }
+        
+        window.onerror(msg,url,line)
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

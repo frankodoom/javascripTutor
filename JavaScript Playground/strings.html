@@ -3,9 +3,38 @@
 <head>
     <title></title>
 	<meta charset="utf-8" />
+    <script>
+
+        function extractString() {
+            start = document.getElementById('txtStart').value;
+            end = document.getElementById('txtEnd').value;
+            var str = document.getElementById('myString').value;
+            var result = str.substring(start, end);//start at 0 end at 10 
+            alert(result);
+        }
+
+        //substr second parameter is count parameter
+           //when you dont specify count parameter starts at index position 11 and give all characters following
+
+        //slice
+      
+    </script>
 </head>
 <body>
     <h1>Javascript String Manipulation</h1>
 
+    <label>Enter Your String</label>
+    <input type="text" id="myString" />
+    <br />
+    <label>Start Position</label>
+    <input type="text" id="txtStart"/>
+    <br />
+
+    <label>End Position</label>
+    <input type="text" id="txtEnd" />
+    <br />
+    <br />
+
+    <input type="button" value="Extract Using Substring" onclick="extractString()" />
 </body>
 </html>

@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+
+    <script type="text/javascript">
+        //undefined function has no return value
+
+        //getSum(2,3);
+        //functions defined with a function expression are not hoisted
+       // function getSum (firstNumber, secondNumber){
+       //     var sum = firstNumber+ secondNumber;
+       //     document.write(sum);
+
+       // }
+       // //anonymus function expression these are not hoisted function has to be called before method is defined.
+       //var mySum= function getSum(firstNumber, secondNumber) {
+       //     var sum = firstNumber + secondNumber;
+       //     return sum;
+
+       //}
+
+
+        //recursive function is a function that calls itself
+
+        //all variables not declared automatically are global evev if inside a function
+
+        //self invoked anonymous function
+
+       var mySum = (function (firstNumber, secondNumber) {
+           var sum = firstNumber + secondNumber;
+           return sum;
+       }(2, 3))
+
+       alert(mySum);
+
+
+
+        //a closure is an inner function that has access to the outer function
+    </script>
+</head>
+<body>
+
+    //function hoisting is where at runtime javascript moves all functions to the top of the page
+
+</body>
+</html>
